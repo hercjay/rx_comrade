@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "318800623579",
+    "project_id": "rx-comrade",
+    "storage_bucket": "rx-comrade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318800623579:android:8fa06b104ed0d14cf8d9fe",
+        "android_client_info": {
+          "package_name": "com.hercjaystudios.rx_comrade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318800623579-kh6rf82ln5emha2tharqch79qnq0qesb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hercjaystudios.rx_comrade",
+            "certificate_hash": "3bd12311a60bcbeaa7f8f0ac5dcd0c6afbdaadbd"
+          }
+        },
+        {
+          "client_id": "318800623579-g899g8oisihhds4flbhj3iqguq7ntc2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMQ1GKc7XIMtOcZ0I6P_eDd-l3xUBXDcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318800623579-g899g8oisihhds4flbhj3iqguq7ntc2v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "318800623579-9on8gc8bjdamafgekphk0je9ebcglv4h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rxComrade"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318800623579:android:4da1296e3ee5ab44f8d9fe",
+        "android_client_info": {
+          "package_name": "com.hercjaystudios.rx_comrade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318800623579-tvrk762ehb62ret4rr4mfmj7te3akkp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hercjaystudios.rx_comrade",
+            "certificate_hash": "3bd12311a60bcbeaa7f8f0ac5dcd0c6afbdaadbd"
+          }
+        },
+        {
+          "client_id": "318800623579-g899g8oisihhds4flbhj3iqguq7ntc2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMQ1GKc7XIMtOcZ0I6P_eDd-l3xUBXDcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318800623579-g899g8oisihhds4flbhj3iqguq7ntc2v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "318800623579-9on8gc8bjdamafgekphk0je9ebcglv4h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rxComrade"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
