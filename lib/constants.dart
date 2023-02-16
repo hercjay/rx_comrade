@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+//storyset icons
+
 double mobileScreen = 480;
 double tabletScreen = 840;
 double desktopScreen = 841; //and above
@@ -13,8 +15,9 @@ const primaryColorDark = Color(0xFF1E5C00);
 
 const secondaryColor = Color.fromARGB(255, 187, 4, 20);
 
-const bgDarkMode = Color.fromARGB(255, 3, 1, 15);
-const appBarBgDarkMode = Color.fromARGB(255, 5, 1, 27);
+const bgDarkMode = Color(0xFF001824); //Color.fromARGB(255, 3, 1, 15);
+const appBarBgDarkMode =
+    Color.fromARGB(255, 0, 19, 29); //Color.fromARGB(255, 5, 1, 27);
 const bgLightMode = Color.fromARGB(255, 236, 236, 236);
 const appBarBgLightMode = Color.fromARGB(255, 230, 230, 230);
 
@@ -38,6 +41,41 @@ double buttonTextFont = 20.0;
 double courseCardTitle = 17.0;
 double landingFontSize2 = 15;
 double smallFont = 12;
+
+//Text Styles
+TextStyle titleTextStyle = const TextStyle(
+  fontSize: 25,
+  fontWeight: FontWeight.w700,
+  //color: primaryColor,
+);
+
+TextStyle cardTitleStyle = const TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.w700,
+  overflow: TextOverflow.ellipsis,
+  //color: primaryColor,
+);
+
+Color setTitleColor(context) {
+  Color c = Theme.of(context).brightness == Brightness.dark
+      ? Colors.white.withOpacity(0.8)
+      : Colors.black;
+  return c;
+}
+
+Color setCardColor(context) {
+  Color c = Theme.of(context).brightness == Brightness.dark
+      ? Color.fromARGB(255, 11, 41, 56)
+      : Color.fromARGB(255, 241, 241, 241); //Color.fromARGB(255, 236, 236, 236)
+  return c;
+}
+
+Color setCardShadowColor(context) {
+  Color c = Theme.of(context).brightness == Brightness.dark
+      ? Color.fromARGB(255, 11, 41, 56)
+      : Colors.grey.withOpacity(0.32);
+  return c;
+}
 
 //APP Names
 const appName = 'Rx Comrade';

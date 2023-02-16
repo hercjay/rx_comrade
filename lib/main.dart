@@ -98,10 +98,11 @@ class _MyAppState extends State<MyApp> {
             ThemeData.dark().floatingActionButtonTheme.copyWith(
                   backgroundColor: constants.primaryColor,
                 ),
-        bottomNavigationBarTheme:
-            ThemeData.dark().bottomNavigationBarTheme.copyWith(
-                  selectedItemColor: constants.primaryColor,
-                ),
+        bottomNavigationBarTheme: ThemeData.dark()
+            .bottomNavigationBarTheme
+            .copyWith(
+                selectedItemColor: constants.primaryColor,
+                backgroundColor: constants.appBarBgDarkMode),
       ),
       themeMode: _themeMode,
       home: const SafeArea(

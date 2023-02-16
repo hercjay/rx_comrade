@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:rx_comrade/constants.dart';
+import 'package:rx_comrade/models/my_course_card.dart';
 import 'package:rx_comrade/res/custom_colors.dart';
 import '../constants.dart' as constants;
 import '../models/course_card.dart';
@@ -204,6 +206,45 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               },
             ),
+            //
+            //
+            Text(
+              'ALL COURSES',
+              textAlign: TextAlign.left,
+              style: titleTextStyle.copyWith(
+                color: setTitleColor(context),
+              ),
+            ),
+            StreamBuilder(
+              stream:
+                  FirebaseFirestore.instance.collection('courses').snapshots(),
+              builder: (BuildContext context,
+                  AsyncSnapshot<QuerySnapshot> snapshot) {
+                if (!snapshot.hasData) {
+                  // ignore: prefer_const_constructors
+                  return CourseCardPlaceholderWithProgress();
+                }
+                return Container(
+                  color: Colors.transparent,
+                  padding: const EdgeInsets.all(5),
+                  height: MediaQuery.of(context).size.height * 0.45,
+                  alignment: Alignment.center,
+                  child: ListView.builder(
+                    itemCount: snapshot.data!.docs.length,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return MyCourseCard(
+                        courseID: snapshot.data!.docs[index].id,
+                        courseTitle: snapshot.data!.docs[index]['courseTitle'],
+                        courseImage: snapshot.data!.docs[index]['courseImage'],
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
+            //
+            //
             ElevatedButton(
               onPressed: () async {
                 await Authentication.signOut(context: context);
